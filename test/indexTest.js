@@ -1,3 +1,5 @@
+
+
 describe("index.html", () => {
   describe("after index.js is processed", () => {
     it("no longer has DOM node 'main#main'", () => {
@@ -13,7 +15,7 @@ describe("index.html", () => {
     });
 
     it("has a 'newHeader' variable that points to node 'h1#victory' with \"YOUR-NAME is the champion\" inside", () => {
-      expect(newHeader.innerText, "Make sure you create an <h1> with id 'victory' with a sweet message in it").to.include("is the champion");
+      expect(newHeader.innerText, "Make sure you create an <h1> with id 'victory' with a sweet message in it").to.include('is the champion');
     });
 
   });
